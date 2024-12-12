@@ -1,0 +1,93 @@
+.modalBackground {
+    position: absolute;
+    top: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.3);
+    cursor: pointer;
+}
+
+.modalContainer {
+    position: relative;
+    max-width: 1100px;
+    width: calc(100% - 400px);
+    height: 500px;
+    margin: 180px auto 0;
+    padding: 20px 40px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    cursor: default;
+}
+.modalContainer::before,
+.modalContainer::after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: 20px;
+  background-color: white;
+}
+.modalContainer::before {
+    top: -20px;
+}
+.modalContainer::after {
+    bottom: -20px;
+}
+
+.modalTitle {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chava';
+    font-size: 48px;
+}
+
+.modalDescription {
+    margin: 20px 0 0;
+    padding: 0;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.accentWord {
+    color: #2A72F8;
+}
+
+.modalButtons {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modalButton {
+    padding: 10px 40px;
+    font-family: 'Chava';
+    font-size: 24px;
+    text-transform: uppercase;
+    background-color: #D4D4D4;
+    color: white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.modalSubmitButton {
+    margin-left: auto;
+    background-color: #2A72F8;
+}
+
+.modalProgressBar {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    background-color: #D4D4D4;
+    overflow: hidden;
+}
+
+.modalProgress {
+    height: 100%;
+    background-color: #2A72F8;
+    transition: width 0.3s ease-in-out;
+}

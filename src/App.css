@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    font-family: 'SBSansText', sans-serif;
+}
+
+@font-face {
+    font-family: 'Chava';
+    src: url('fonts/Chava-Regular.otf') format('opentype'),
+         url('fonts/Chava-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
