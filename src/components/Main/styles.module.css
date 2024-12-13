@@ -8,15 +8,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .intro {
     width: calc(100% - 80px);
     padding: 40px 52px 0;
+    z-index: 2;
 }
 
 .title {
-    margin: 0;
+    margin: 0 0 60px;
     padding: 0;
     font-family: 'Chava';
     font-size: 80px;
@@ -27,7 +29,7 @@
 }
 
 .text {
-    margin: 40px 0 0;
+    margin: 0;
     padding: 0;
     max-width: 420px;
     font-size: 24px;
@@ -70,4 +72,35 @@
 } 
 .button::after {
     bottom: -20px;
+}
+
+.cloud {
+    position: absolute;
+    animation: moveCloud 60s steps(60) infinite;
+    z-index: 1;
+}
+.cloud img {
+    filter: invert(1);
+}
+
+.firstCloud {
+    top: -90px;
+    left: -20%;
+}
+
+.secondCloud {
+    top: 30px;
+    left: 50%;
+}
+
+@keyframes moveCloud {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }

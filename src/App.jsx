@@ -10,9 +10,14 @@ function App() {
     const [activeTaskNum, setActiveTaskNum] = useState(0);
     const [achievements, setAchievements] = useState([]);
 
+    const handleShowModal = () => {
+        achievements.filter(((achievement) => achievement.id === 3)) && setActiveTaskNum(0);
+        setIsShowModal(true);
+    }
+
     return (
         <>
-            <Main showModal={() => setIsShowModal(true)}/>
+            <Main showModal={handleShowModal}/>
             {isShowModal && (
                 <Modal
                     hideModal={() => setIsShowModal(false)}

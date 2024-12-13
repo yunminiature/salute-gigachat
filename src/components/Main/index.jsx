@@ -13,13 +13,19 @@ function Main({ showModal }) {
                     —&nbsp;конференции команды разработки GigaChat про технологии искусственного интеллекта<br/> 
                 </p>
                 <p className={`${styles.text} ${styles.leftSideText}`}>
-                    <span className={styles.accentWord}> Твоя задача </span>
-                    —&nbsp;помочь с подготовкой, используя инструмент Playground
+                    Подготовься к конференции, используя
+                    <span className={styles.accentWord}> Playground</span>
                 </p>
             </div>
             <button className={styles.button} onClick={showModal}>
                 Старт!
             </button>
+            <div className={`${styles.cloud} ${styles.firstCloud}`}>
+                <img src="/images/cloud.png" alt="cloud"/>
+            </div>
+            <div className={`${styles.cloud} ${styles.secondCloud}`}>
+                <img src="/images/cloud.png" alt="cloud"/>
+            </div>
         </div>
     )
 }

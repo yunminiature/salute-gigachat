@@ -2,13 +2,14 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 400px;
+    width: 440px;
     padding: 20px;
     display: flex;
     align-items: center;
     column-gap: 10px;
     background-color: white;
-    animation: slideIn 0.5s ease-out, slideOut 0.5s 3s ease-in forwards;
+    box-shadow: -10px -10px 40px -15px rgba(34, 60, 80, 0.2);
+    animation: slideIn 0.5s ease-out, slideOut 4.5s 0.5s ease-in forwards;
     z-index: 10;
 }
 

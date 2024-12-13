@@ -7,7 +7,7 @@ function Achievement({ icon, text }) {
     useEffect(() => {
         const timeout = setTimeout(() => {
             setIsVisible(false);
-        }, 3000);
+        }, 5000);
 
         return () => clearTimeout(timeout);
     }, []);
@@ -19,7 +19,7 @@ function Achievement({ icon, text }) {
     return(
         <div className={styles.achievement}>
             <div className={styles.achievementIconContainer}>
-                <img src={icon} alt="Achievement Icon" className={styles.achievementIcon} />
+                <img src={icon} alt="achievement" className={styles.achievementIcon} />
             </div>
             <p className={styles.achievementText}>
                 <span className={styles.accentWord}>Получено достижение: </span>{text}!

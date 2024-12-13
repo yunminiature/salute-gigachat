@@ -12,7 +12,9 @@ function Modal({ hideModal, activeTaskNum, task, setActiveTaskNum, getAchievemen
 
     const handleNextClick = () => {
         getAchievements(activeTaskNum);
-        setActiveTaskNum(activeTaskNum + 1);
+        if (activeTaskNum === 3) {
+            hideModal();
+        } else setActiveTaskNum(activeTaskNum + 1);;
     }
 
     return (
@@ -27,11 +29,9 @@ function Modal({ hideModal, activeTaskNum, task, setActiveTaskNum, getAchievemen
                             Назад
                         </button>
                     )}
-                    {activeTaskNum < 3 && (
-                        <button className={`${styles.modalButton} ${styles.modalSubmitButton}`} onClick={handleNextClick}>
-                            Далее
-                        </button>
-                    )}
+                    <button className={`${styles.modalButton} ${styles.modalSubmitButton}`} onClick={handleNextClick}>
+                        Далее
+                    </button>
                 </div>
                 <div className={styles.modalProgressBar}>
                     <div
