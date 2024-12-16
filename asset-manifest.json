@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/salute-gigachat/static/css/main.11fe3852.css",
-    "main.js": "/salute-gigachat/static/js/main.4e81c575.js",
+    "main.js": "/salute-gigachat/static/js/main.2492432c.js",
     "static/media/Chava-Regular.ttf": "/salute-gigachat/static/media/Chava-Regular.66b6b6851038882f5143.ttf",
     "static/media/Chava-Regular.otf": "/salute-gigachat/static/media/Chava-Regular.94d1a689284b57eae63a.otf",
     "index.html": "/salute-gigachat/index.html",
     "main.11fe3852.css.map": "/salute-gigachat/static/css/main.11fe3852.css.map",
-    "main.4e81c575.js.map": "/salute-gigachat/static/js/main.4e81c575.js.map"
+    "main.2492432c.js.map": "/salute-gigachat/static/js/main.2492432c.js.map"
   },
   "entrypoints": [
     "static/css/main.11fe3852.css",
-    "static/js/main.4e81c575.js"
+    "static/js/main.2492432c.js"
   ]
 }
