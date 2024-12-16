@@ -19,7 +19,7 @@ function Achievement({ icon, text }) {
     return(
         <div className={styles.achievement}>
             <div className={styles.achievementIconContainer}>
-                <img src={icon} alt="achievement" className={styles.achievementIcon} />
+                <img src={`${process.env.PUBLIC_URL}/${icon}`} alt="achievement" className={styles.achievementIcon} />
             </div>
             <p className={styles.achievementText}>
                 <span className={styles.accentWord}>Получено достижение: </span>{text}!

@@ -23,19 +23,19 @@ export const TASKS = [
 
 export const ACHIEVEMENTS = [
     {
-        icon: "/images/0.png",
+        icon: "images/0.png",
         text: "Первая генерация",
     },
     {
-        icon: "/images/1.png",
+        icon: "images/1.png",
         text: "Эксперт по настройкам",
     },
     {
-        icon: "/images/2.png",
+        icon: "images/2.png",
         text: "Мастер модерации",
     },
     {
-        icon: "/images/3.png",
+        icon: "images/3.png",
         text: "Главный по табличкам",
     },
 ]

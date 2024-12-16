@@ -21,10 +21,10 @@ function Main({ showModal }) {
                 Старт!
             </button>
             <div className={`${styles.cloud} ${styles.firstCloud}`}>
-                <img src="/images/cloud.png" alt="cloud"/>
+                <img src={`${process.env.PUBLIC_URL}/images/cloud.png`} alt="cloud"/>
             </div>
             <div className={`${styles.cloud} ${styles.secondCloud}`}>
-                <img src="/images/cloud.png" alt="cloud"/>
+                <img src={`${process.env.PUBLIC_URL}/images/cloud.png`} alt="cloud"/>
             </div>
         </div>
     )
